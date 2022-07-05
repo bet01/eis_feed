@@ -1,0 +1,34 @@
+{
+  "SportID": "22",
+  "SportsName": "In-Running",
+  "CountryID": "198",
+  "CountryName": "SOUTH AFRICA",
+  "TournamentID": "743029",
+  "TournamentName": "South African Channel",
+  "FixtureData": {
+    "FixtureName": "Test",
+    "FixtureID": "6135256",
+    "FeedID": "4",
+    "FixtureStartDateTime": "2022-06-01 05:55:00 PM",
+    "FixtureEndDateTime": "2022-06-01 05:55:00 PM",
+    "FixtureStatusID": "1",
+    "FixtureStatus": "Active",
+    "TeamData": {
+      "Team": [
+        {
+          "TeamID": "420328",
+          "TeamName": "France (Cliff)",
+          "TeamType": "AWAY"
+        },
+        {
+          "TeamID": "420332",
+          "TeamName": "Shunan Public University",
+          "TeamType": "HOME"
+        }
+      ]
+    },
+    "BetTypeData": {
+      "BetType": []
+    }
+  }
+}

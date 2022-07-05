@@ -1,0 +1,115 @@
+{
+  "SportID": "1",
+  "SportsName": "Soccer",
+  "CountryID": "59",
+  "CountryName": "DENMARK",
+  "TournamentID": "622620",
+  "TournamentName": "Denmark Danmarksserien G. 3",
+  "FixtureData": {
+    "FixtureName": "Oure Fodbold Akademi vs B 1909 Odense",
+    "FixtureID": "6135369",
+    "FeedID": "11",
+    "FixtureStartDateTime": "2022-06-03 06:30:01 PM",
+    "FixtureEndDateTime": "2022-06-03 08:20:01 PM",
+    "FixtureStatusID": "1",
+    "FixtureStatus": "Active",
+    "TeamData": {
+      "Team": [
+        {
+          "TeamID": "83956",
+          "TeamName": "B 1909 Odense",
+          "TeamType": "AWAY"
+        },
+        {
+          "TeamID": "83980",
+          "TeamName": "Oure Fodbold Akademi",
+          "TeamType": "HOME"
+        }
+      ]
+    },
+    "BetTypeData": {
+      "BetType": [
+        {
+          "BetTypeID": "16",
+          "BetTypeName": "Full time",
+          "Market": [
+            {
+              "MarketID": "174802955",
+              "MarketStatusID": "1",
+              "MarketStatus": "Active",
+              "MarketName": "Oure Fodbold Akademi",
+              "MarketNumber": "1",
+              "MarketOdds": "0.50",
+              "SpecialValue": null,
+              "BetResult": null
+            },
+            {
+              "MarketID": "174802956",
+              "MarketStatusID": "1",
+              "MarketStatus": "Active",
+              "MarketName": "Draw",
+              "MarketNumber": "2",
+              "MarketOdds": "3.20",
+              "SpecialValue": null,
+              "BetResult": null
+            },
+            {
+              "MarketID": "174802957",
+              "MarketStatusID": "1",
+              "MarketStatus": "Active",
+              "MarketName": "B 1909 Odense",
+              "MarketNumber": "3",
+              "MarketOdds": "3.40",
+              "SpecialValue": null,
+              "BetResult": null
+            }
+          ],
+          "BetTypeStatusID": "1",
+          "BetTypeStatus": "Active",
+          "BetTypeGroupID": "32813867",
+          "BetTypeGroupName": null
+        },
+        {
+          "BetTypeID": "28",
+          "BetTypeName": "Double Chance",
+          "Market": [
+            {
+              "MarketID": "174802958",
+              "MarketStatusID": "1",
+              "MarketStatus": "Active",
+              "MarketName": "Oure Fodbold Akademi or B 1909 Odense",
+              "MarketNumber": "1",
+              "MarketOdds": "0.12",
+              "SpecialValue": null,
+              "BetResult": null
+            },
+            {
+              "MarketID": "174802959",
+              "MarketStatusID": "1",
+              "MarketStatus": "Active",
+              "MarketName": "Oure Fodbold Akademi or Draw",
+              "MarketNumber": "2",
+              "MarketOdds": "0.10",
+              "SpecialValue": null,
+              "BetResult": null
+            },
+            {
+              "MarketID": "174802960",
+              "MarketStatusID": "1",
+              "MarketStatus": "Active",
+              "MarketName": "Draw or B 1909 Odense",
+              "MarketNumber": "3",
+              "MarketOdds": "1.27",
+              "SpecialValue": null,
+              "BetResult": null
+            }
+          ],
+          "BetTypeStatusID": "1",
+          "BetTypeStatus": "Active",
+          "BetTypeGroupID": "32813860",
+          "BetTypeGroupName": null
+        }
+      ]
+    }
+  }
+}

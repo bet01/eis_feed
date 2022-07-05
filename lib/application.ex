@@ -4,6 +4,7 @@ defmodule EisFeed.Application do
   @impl true
   def start(_type, _args) do
     children = [
+      {EisFeed.RabbitMQ.Consumer, []}
     ]
 
     opts = [strategy: :one_for_one, name: EisFeed.Supervisor]

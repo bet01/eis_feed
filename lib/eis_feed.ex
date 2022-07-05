@@ -1,2 +1,0 @@
-defmodule EisFeed do
-end
