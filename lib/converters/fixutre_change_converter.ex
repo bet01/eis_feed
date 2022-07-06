@@ -1,10 +1,12 @@
-defmodule EisFeed.MessageConverter do
+defmodule EisFeed.Converters.FixtureChangeConverter do
   @live_in_play 1
   @prematch 3
 
-  def to_common_format(%{"FixtureData" => fixture_data} = fixture, timestamp, :fixture_change) do
+  def to_common_format(%{"FixtureData" => fixture_data} = fixture, timestamp) do
     %{
+      "source" => "EIS",
       "fixtureId" => fixture_data["FixtureID"],
+      "messageType" => "Fixture",
       "category" => %{
         "categoryId" => fixture["CountryID"],
         "categoryName" => fixture["CountryName"]
@@ -23,14 +25,15 @@ defmodule EisFeed.MessageConverter do
         "tournamentId" => fixture["TournamentID"],
         "tournamentName" => fixture["TournamentName"]
       },
-      "type" => "match",
-      "version" => "3.0.0.0"
+      "type" => "match"
     }
   end
 
-  def to_common_format(%{"RaceData" => race_data} = race, _timestamp, :fixture_change) do
+  def to_common_format(%{"RaceData" => race_data} = race, _timestamp) do
     %{
+      "source" => "EIS",
       "fixtureId" => race["MeetingID"],
+      "messageType" => "Fixture",
       "category" => %{
         "categoryId" => race["CountryID"],
         "categoryName" => race["CountryName"]
@@ -46,13 +49,14 @@ defmodule EisFeed.MessageConverter do
       "startDate" => race["MeetingDate"],
       "status" => race_data["RaceStatus"],
       "tournament" => nil,
-      "type" => "match",
-      "version" => "3.0.0.0"
+      "type" => "match"
     }
   end
 
-  def to_common_format(%{"DrawID" => draw_id} = lucky_numbers_data, timestamp, :fixture_change) do
+  def to_common_format(%{"DrawID" => draw_id} = lucky_numbers_data, timestamp) do
     %{
+      "source" => "EIS",
+      "messageType" => "Fixture",
       "fixtureId" => draw_id,
       "category" => %{
         "categoryId" => lucky_numbers_data["CountryID"],
@@ -72,8 +76,7 @@ defmodule EisFeed.MessageConverter do
         "tournamentId" => lucky_numbers_data["LotteryID"],
         "tournamentName" => lucky_numbers_data["LotteryName"]
       },
-      "type" => "match",
-      "version" => "3.0.0.0"
+      "type" => "match"
     }
   end
 
