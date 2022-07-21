@@ -23,7 +23,9 @@ defmodule EisFeed.MixProject do
   defp deps do
     [
       {:broadway_rabbitmq, "~> 0.7"},
-      {:poison, "~> 5.0"}
+      {:amqp, "~> 3.1"},
+      {:poison, "~> 5.0"},
+      {:bet_messages, git: "git@github.com:bet01/betmessages.git", tag: "2.0.1", only: [:test]}
     ]
   end
 end

@@ -1,6 +1,5 @@
 defmodule EisFeed.Converters.FixtureChangeConverter do
-  @live_in_play 1
-  @prematch 3
+  alias EisFeed.Converters.Utils
 
   def to_common_format(%{"FixtureData" => fixture_data} = fixture, timestamp) do
     %{
@@ -12,15 +11,15 @@ defmodule EisFeed.Converters.FixtureChangeConverter do
         "categoryName" => fixture["CountryName"]
       },
       "competitors" => to_competitors(fixture_data),
-      "created" => timestamp,
+      "created" => timestamp |> to_string(),
       "fixtureName" => fixture_data["FixtureName"],
-      "producerId" => get_producer_id(fixture),
+      "producerId" => Utils.get_producer_id(fixture),
       "sport" => %{
         "sportId" => fixture["SportID"],
         "sportName" => fixture["SportsName"]
       },
       "startDate" => fixture_data["FixtureStartDateTime"],
-      "status" => fixture_data["FixtureStatus"],
+      "status" => %{status: fixture_data["FixtureStatus"]} |> Poison.encode!(),
       "tournament" => %{
         "tournamentId" => fixture["TournamentID"],
         "tournamentName" => fixture["TournamentName"]
@@ -32,23 +31,26 @@ defmodule EisFeed.Converters.FixtureChangeConverter do
   def to_common_format(%{"RaceData" => race_data} = race, _timestamp) do
     %{
       "source" => "EIS",
-      "fixtureId" => race["MeetingID"],
+      "fixtureId" => race_data["RaceID"],
       "messageType" => "Fixture",
       "category" => %{
         "categoryId" => race["CountryID"],
         "categoryName" => race["CountryName"]
       },
       "competitors" => to_competitors(race_data),
-      "created" => race["Timestamp"],
-      "fixtureName" => race["MeetingName"],
-      "producerId" => @prematch,
+      "created" => Utils.to_unix_timestamp(race["Timestamp"]) |> to_string(),
+      "fixtureName" => race_data["RaceNumber"],
+      "producerId" => Utils.get_producer_id(race),
       "sport" => %{
         "sportId" => race["SportID"],
         "sportName" => race["SportName"]
       },
       "startDate" => race["MeetingDate"],
-      "status" => race_data["RaceStatus"],
-      "tournament" => nil,
+      "status" => %{status: race_data["RaceStatus"]} |> Poison.encode!(),
+      "tournament" => %{
+        "tournamentId" => race["MeetingID"],
+        "tournamentName" => race["MeetingName"]
+      },
       "type" => "match"
     }
   end
@@ -62,16 +64,16 @@ defmodule EisFeed.Converters.FixtureChangeConverter do
         "categoryId" => lucky_numbers_data["CountryID"],
         "categoryName" => lucky_numbers_data["CountryName"]
       },
-      "competitors" => nil,
-      "created" => timestamp,
+      "competitors" => [],
+      "created" => timestamp |> to_string(),
       "fixtureName" => lucky_numbers_data["LotteryShortName"],
-      "producerId" => @prematch,
+      "producerId" => Utils.get_producer_id(lucky_numbers_data),
       "sport" => %{
         "sportId" => lucky_numbers_data["SportID"],
         "sportName" => lucky_numbers_data["SportName"]
       },
       "startDate" => lucky_numbers_data["DrawDate"],
-      "status" => lucky_numbers_data["LotteryResults"],
+      "status" => lucky_numbers_data["LotteryResults"] |> Poison.encode!(),
       "tournament" => %{
         "tournamentId" => lucky_numbers_data["LotteryID"],
         "tournamentName" => lucky_numbers_data["LotteryName"]
@@ -82,8 +84,10 @@ defmodule EisFeed.Converters.FixtureChangeConverter do
 
   defp to_competitors(%{"Horses" => %{"HorseData" => horses}}) do
     Enum.map(horses, fn horse ->
+      horse_id = String.to_integer(horse["HorseID"])
+
       %{
-        "id" => horse["HorseID"],
+        "id" => %{"id" => horse_id} |> Poison.encode!(),
         "name" => horse["HorseName"]
       }
     end)
@@ -93,17 +97,16 @@ defmodule EisFeed.Converters.FixtureChangeConverter do
     teams_sorted = Enum.sort_by(teams, fn team -> team["TeamType"] end, :desc)
 
     Enum.map(teams_sorted, fn team ->
+      team_id = String.to_integer(team["TeamID"])
+
       %{
-        "id" => team["TeamID"],
+        "id" => %{"id" => team_id} |> Poison.encode!(),
         "name" => team["TeamName"]
       }
     end)
   end
 
   defp to_competitors(%{"TeamData" => _team_data}) do
-    nil
+    []
   end
-
-  defp get_producer_id(%{"SportsName" => "In-Running"}), do: @live_in_play
-  defp get_producer_id(_), do: @prematch
 end
