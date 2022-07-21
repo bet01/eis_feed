@@ -1,0 +1,112 @@
+{
+  "SportID": "39",
+  "SportsName": "Greyhound Racing",
+  "CountryID": "14",
+  "CountryName": "AUSTRALIA",
+  "TournamentID": "227633",
+  "TournamentName": "GUNNEDAH",
+  "FixtureData": {
+    "FixtureName": "RACE 10",
+    "FixtureID": "815301",
+    "FeedID": null,
+    "FixtureStartDateTime": "2022-06-02 09:42:00 AM",
+    "FixtureEndDateTime": "2022-06-02 09:42:00 AM",
+    "FixtureStatusID": "1",
+    "FixtureStatus": "Active",
+    "TeamData": null,
+    "BetTypeData": {
+      "BetType": [
+        {
+          "BetTypeID": "1",
+          "BetTypeName": "Win",
+          "Market": [
+            {
+              "MarketID": "7051180",
+              "MarketStatusID": "1",
+              "MarketStatus": "Active",
+              "MarketName": "ROCK IT OUT",
+              "MarketNumber": "1",
+              "MarketOdds": "0.00",
+              "SpecialValue": null,
+              "BetResult": "0"
+            },
+            {
+              "MarketID": "7051181",
+              "MarketStatusID": "1",
+              "MarketStatus": "Active",
+              "MarketName": "SCAMSTER",
+              "MarketNumber": "2",
+              "MarketOdds": "0.00",
+              "SpecialValue": null,
+              "BetResult": "0"
+            },
+            {
+              "MarketID": "7051182",
+              "MarketStatusID": "1",
+              "MarketStatus": "Active",
+              "MarketName": "WESTERN HERO",
+              "MarketNumber": "3",
+              "MarketOdds": "0.00",
+              "SpecialValue": null,
+              "BetResult": "0"
+            },
+            {
+              "MarketID": "7051183",
+              "MarketStatusID": "1",
+              "MarketStatus": "Active",
+              "MarketName": "TYPHOON TONY",
+              "MarketNumber": "4",
+              "MarketOdds": "0.00",
+              "SpecialValue": null,
+              "BetResult": "0"
+            },
+            {
+              "MarketID": "7051184",
+              "MarketStatusID": "1",
+              "MarketStatus": "Active",
+              "MarketName": "AISLE BLUE",
+              "MarketNumber": "5",
+              "MarketOdds": "0.00",
+              "SpecialValue": null,
+              "BetResult": "0"
+            },
+            {
+              "MarketID": "7051185",
+              "MarketStatusID": "1",
+              "MarketStatus": "Active",
+              "MarketName": "SWIFT KEVIN",
+              "MarketNumber": "6",
+              "MarketOdds": "0.00",
+              "SpecialValue": null,
+              "BetResult": "0"
+            },
+            {
+              "MarketID": "7051186",
+              "MarketStatusID": "1",
+              "MarketStatus": "Active",
+              "MarketName": "MOON SHINE",
+              "MarketNumber": "7",
+              "MarketOdds": "0.00",
+              "SpecialValue": null,
+              "BetResult": "0"
+            },
+            {
+              "MarketID": "7051187",
+              "MarketStatusID": "1",
+              "MarketStatus": "Active",
+              "MarketName": "ALL INN AUSSIE",
+              "MarketNumber": "8",
+              "MarketOdds": "0.00",
+              "SpecialValue": null,
+              "BetResult": "0"
+            }
+          ],
+          "BetTypeStatusID": "1",
+          "BetTypeStatus": "Active",
+          "BetTypeGroupID": "11",
+          "BetTypeGroupName": null
+        }
+      ]
+    }
+  }
+}

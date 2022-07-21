@@ -1,0 +1,125 @@
+{
+  "SportID": "17",
+  "SportName": "Lucky Numbers",
+  "LotteryID": "115",
+  "LotteryName": "UK 49'S AFTERNOON DRAW",
+  "LotteryShortName": "ULOTTO",
+  "CountryID": "226",
+  "CountryName": "UNITED KINGDOM",
+  "BallsInSet": "49",
+  "BallsDrawn": "6",
+  "BallsInExtraSet": "49",
+  "ExtraBallsDrawn": "1",
+  "NumberOfBallSets": "1",
+  "DrawID": "171640",
+  "DrawDate": "2022-06-06 01:49:00 PM",
+  "DrawTime": "13:49",
+  "DrawDay": "Monday",
+  "LotteryRuleSets": {
+    "RuleSet": [
+      {
+        "RuleSetName": "Ball",
+        "RuleSetID": "1",
+        "MainSet": "True",
+        "ExtraSet": "True",
+        "BallsToPick": "1",
+        "Odds": "5.50",
+        "Enabled": "True"
+      },
+      {
+        "RuleSetName": "Ball",
+        "RuleSetID": "1",
+        "MainSet": "False",
+        "ExtraSet": "True",
+        "BallsToPick": "1",
+        "Odds": "45.00",
+        "Enabled": "True"
+      },
+      {
+        "RuleSetName": "Ball",
+        "RuleSetID": "1",
+        "MainSet": "True",
+        "ExtraSet": "True",
+        "BallsToPick": "2",
+        "Odds": "52.00",
+        "Enabled": "True"
+      },
+      {
+        "RuleSetName": "Ball",
+        "RuleSetID": "1",
+        "MainSet": "True",
+        "ExtraSet": "True",
+        "BallsToPick": "3",
+        "Odds": "400.00",
+        "Enabled": "True"
+      },
+      {
+        "RuleSetName": "Ball",
+        "RuleSetID": "1",
+        "MainSet": "True",
+        "ExtraSet": "True",
+        "BallsToPick": "4",
+        "Odds": "4000.00",
+        "Enabled": "True"
+      },
+      {
+        "RuleSetName": "Ball",
+        "RuleSetID": "1",
+        "MainSet": "True",
+        "ExtraSet": "True",
+        "BallsToPick": "5",
+        "Odds": "50000.00",
+        "Enabled": "True"
+      },
+      {
+        "RuleSetName": "Odd Number",
+        "RuleSetID": "3",
+        "MainSet": "False",
+        "ExtraSet": "True",
+        "BallsToPick": "1",
+        "Odds": "0.90",
+        "Enabled": "True"
+      },
+      {
+        "RuleSetName": "Even Number",
+        "RuleSetID": "8",
+        "MainSet": "False",
+        "ExtraSet": "True",
+        "BallsToPick": "1",
+        "Odds": "0.90",
+        "Enabled": "True"
+      },
+      {
+        "RuleSetName": "Single Digit",
+        "RuleSetID": "6",
+        "MainSet": "False",
+        "ExtraSet": "True",
+        "BallsToPick": "1",
+        "Odds": "4.25",
+        "Enabled": "True"
+      },
+      {
+        "RuleSetName": "High Number",
+        "RuleSetID": "9",
+        "MainSet": "False",
+        "ExtraSet": "True",
+        "BallsToPick": "1",
+        "Odds": "0.90",
+        "Enabled": "True"
+      },
+      {
+        "RuleSetName": "Low Number",
+        "RuleSetID": "10",
+        "MainSet": "False",
+        "ExtraSet": "True",
+        "BallsToPick": "1",
+        "Odds": "0.90",
+        "Enabled": "True"
+      }
+    ]
+  },
+  "LotteryResults": {
+    "MainSet": [],
+    "ExtraSets": null
+  }
+}

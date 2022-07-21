@@ -1,0 +1,150 @@
+{
+  "Timestamp": "2022-06-02T10:15:59.860",
+  "SportName": "Horse Racing",
+  "SportID": "8",
+  "RaceData": {
+    "ToteBets": {
+      "OpenBetType": [
+        {
+          "Selection": null,
+          "PoolLimit": null,
+          "Dividend": null,
+          "Combiniations": null,
+          "BetTypeName": "Open Win",
+          "BetTypeID": "14"
+        },
+        {
+          "Selection": null,
+          "PoolLimit": null,
+          "Dividend": null,
+          "Combiniations": null,
+          "BetTypeName": "Place",
+          "BetTypeID": "2"
+        },
+        {
+          "Selection": null,
+          "PoolLimit": null,
+          "Dividend": null,
+          "Combiniations": null,
+          "BetTypeName": "Open Place",
+          "BetTypeID": "15"
+        },
+        {
+          "Selection": null,
+          "PoolLimit": null,
+          "Dividend": null,
+          "Combiniations": null,
+          "BetTypeName": "Open Swinger",
+          "BetTypeID": "3"
+        },
+        {
+          "Selection": null,
+          "PoolLimit": null,
+          "Dividend": null,
+          "Combiniations": null,
+          "BetTypeName": "Open Exacta",
+          "BetTypeID": "4"
+        },
+        {
+          "Selection": null,
+          "PoolLimit": null,
+          "Dividend": null,
+          "Combiniations": null,
+          "BetTypeName": "Open Trifecta",
+          "BetTypeID": "5"
+        },
+        {
+          "Selection": null,
+          "PoolLimit": null,
+          "Dividend": null,
+          "Combiniations": null,
+          "BetTypeName": "Open Quartet",
+          "BetTypeID": "6"
+        }
+      ]
+    },
+    "RaceStatus": "1",
+    "RaceNumber": "5",
+    "RaceID": "882853",
+    "RaceDateTime": "2022-06-02 08:40:00 PM",
+    "PlacePercentage": "20.00",
+    "PayingPlaces": "2",
+    "Horses": {
+      "HorseData": [
+        {
+          "ScratchingPercentage": null,
+          "ScratchingDateTime": null,
+          "Scratched": null,
+          "PreviousPrice": "1.00",
+          "HorseNumber": "2",
+          "HorseName": "NEW DIMENSION",
+          "HorseID": "8045054", 
+          "FirstTimer": null,
+          "FinishingPosition": null,
+          "Favourite": null,
+            "CurrentPrice": "1.2500000"
+        },
+        {
+          "ScratchingPercentage": null,
+          "ScratchingDateTime": null,
+          "Scratched": null,
+          "PreviousPrice": "2.20",
+          "HorseNumber": "3",
+          "HorseName": "SPINAROUND",
+          "HorseID": "8045055",
+          "FirstTimer": null,
+          "FinishingPosition": null,
+          "Favourite": null,
+          "CurrentPrice": "2.0000000"
+        },
+        {
+          "ScratchingPercentage": null,
+          "ScratchingDateTime": null,
+          "Scratched": null,
+          "PreviousPrice": "4.00",
+          "HorseNumber": "4",
+          "HorseName": "GIEWONT",
+          "HorseID": "8045056",
+          "FirstTimer": null,
+          "FinishingPosition": null,
+          "Favourite": null,
+          "CurrentPrice": "4.5450000"
+        },
+        {
+          "ScratchingPercentage": null,
+          "ScratchingDateTime": null,
+          "Scratched": null,
+          "PreviousPrice": "0.00",
+          "HorseNumber": "1",
+          "HorseName": "SEATTLE KING",
+          "HorseID": "8045053",
+          "FirstTimer": null,
+          "FinishingPosition": null,
+          "Favourite": null,
+          "CurrentPrice": "10.0000000"
+        },
+        {
+          "ScratchingPercentage": null,
+          "ScratchingDateTime": null,
+          "Scratched": null,
+          "PreviousPrice": "0.00",
+          "HorseNumber": "5",
+          "HorseName": "FRANCESI",
+          "HorseID": "8045057",
+          "FirstTimer": null,
+          "FinishingPosition": null,
+          "Favourite": null,
+          "CurrentPrice": "10.0000000"
+        }
+      ]
+    }
+  },
+  "RaceCount": "7",
+  "MeetingName": "CHELMSFORD CITY",
+  "MeetingID": "217624",
+  "MeetingDate": "2022-06-02 06:30:00 PM",
+  "MeetingCode": "CHS",
+  "Exotics": null,
+  "CountryName": "UNITED KINGDOM",
+  "CountryID": "226"
+} 
